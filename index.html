@@ -74,7 +74,7 @@
     .hero {
       position: relative;
       width: 100%;
-      background: url('Your paragraph text (2).png') no-repeat center center/cover;
+      background: url('images/Your paragraph text (2).png') no-repeat center center/cover;
       height: 60vh;
       display: flex;
       align-items: center;
@@ -147,32 +147,34 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
 
-    .testimonials, .certifications {
+    .testimonials {
       display: flex;
       gap: 1rem;
       padding: 1rem 0;
-    }
-
-    .testimonials {
       overflow-x: auto;
       scroll-snap-type: x mandatory;
+      max-width: 100%;
+      white-space: normal; /* allow wrapping */
     }
-
-    .testimonial-card, .certification-card {
-      min-width: 300px;
+    
+    .testimonial-card {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 400px; /* Limit how wide a testimonial can be */
       background: white;
       padding: 2rem;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       scroll-snap-align: center;
-      flex: 0 0 auto;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      word-wrap: break-word; /* Break long words if needed */
     }
-
+    
     .testimonial-card:hover {
       transform: scale(1.03);
     }
+    
 
     .certifications {
       overflow: hidden;
@@ -248,7 +250,7 @@
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services-fees.html">Services & Fees</a>
-    <a href="links">Resources</a>
+    <a href="links.html">Resources</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -259,7 +261,7 @@
 
   <section id="about">
     <h2>Welcome</h2>
-    <p class="highlight">As a certified life coach, speaker, and author, I help individuals just like you achieve financial independence, build better relationships, and boost their confidence. My background includes over 600 financial seminars and years of successful client partnerships.</p>
+    
     <p>Welcome! As a board-certified and ICF credentialed life coach, as well as a certified confidence coach, I'm here to partner with you in achieving your goals and dreams. I'm also a professional trainer, speaker, and author with expertise in personal finance, relationships, etiquette AND overall enjoying the best possible life! I'll provide you with the essential tools that have led to my success and empower you to succeed as well!</p>
   </section>
 
@@ -292,24 +294,19 @@
       </div>
     </div>
 
-
-    <p class="highlight"style="margin-top: 40px;">Author of <strong>"Life Choices: Putting the Pieces Together"</strong> — <a href="contact.html">Contact me to purchase a copy.</a></p>
-  </section>
-  
-
   <section id="certifications">
     <h2>Certifications & Memberships</h2>
     <div class="certifications">
       <div class="certification-wrapper">
-        <div class="certification-card"><img src="BCC sm cropped.jpg" alt="BCC Certification"></div>
-        <div class="certification-card"><img src="PCClogo.png" alt="PCC Certification"></div>
-        <div class="certification-card"><img src="TAcertified.gif" alt="CTA Certification"></div>
-        <div class="certification-card"><img src="ICF-LOGO PIT.png" alt="ICF Logo"></div>
-        <div class="certification-card"><img src="DISC.png" alt="DISC Certification"></div>
-        <div class="certification-card"><img src="RCI_logo_certified_CRCS.jpg" alt="BCC Certification"></div>
-        <div class="certification-card"><img src="AC12.png" alt="PCC Certification"></div>
-        <div class="certification-card"><img src="colourworks logo. certified.png" alt="PCC Certification"></div>
-        <div class="certification-card"><img src="rcimemberlogo_small (1).jpg" alt="PCC Certification"></div>
+        <div class="certification-card"><img src="images/BCC sm cropped.jpg" alt="BCC Certification"></div>
+        <div class="certification-card"><img src="images/PCClogo.png" alt="PCC Certification"></div>
+        <div class="certification-card"><img src="images/TAcertified.gif" alt="CTA Certification"></div>
+        <div class="certification-card"><img src="images/ICF-LOGO PIT.png" alt="ICF Logo"></div>
+        <div class="certification-card"><img src="images/DISC.png" alt="DISC Certification"></div>
+        <div class="certification-card"><img src="images/RCI_logo_certified_CRCS.jpg" alt="BCC Certification"></div>
+        <div class="certification-card"><img src="images/AC12.png" alt="PCC Certification"></div>
+        <div class="certification-card"><img src="images/colourworks logo. certified.png" alt="PCC Certification"></div>
+        <div class="certification-card"><img src="images/rcimemberlogo_small (1).jpg" alt="PCC Certification"></div>
       </div>
     </div>
   </section>
@@ -326,19 +323,43 @@
   </section>
 
   <section id="testimonials">
+    <h2>Speaking & Seminars Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial-card">
+        <p>""Kathy Jo has written articles for our monthly newsletter, sharing her insight and joy of life with members of our organization for quite a few years. She was our keynote speaker for our 119th Annual Meeting held on 5/1/15 at the Sheraton at Station Square here in Pittsburgh. Her presentation was smart and heartfelt, and provided knowledge and information that everyone could use. She is a person that you want to keep talking and listen to more of what she has to share. A true treasure!"."<br/><strong>- Harold Booth, President - Pennsylvania Association of Credit Management</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <p>"Working with Kathy Jo has been wonderful! She presented numerous seminars over the last 5 years through our Benefits/Ceridian relationship. Whether it s a more challenging topic such as 'Silencing the Inner Critic,' or a lighter topic, 'Happiness,' she presents in a style that is easy to listen to and is very engaging! Her style of presenting allows participants to open up during difficult topics. I can t wait for her to return to our workplace!"<br/><strong>- Jennifer Rhoades, GlaxoSmithKline</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <p>"Kathy Jo possesses all of the traits needed to be an excellent coach and speaker including kindness, sincerity, concern and empathy. Her ability to relate to people is a special gift and a powerful asset as a public speaker. The lunch time program that she provided on financial budgeting received only positive feedback from employees in the audience. I can offer only positive recommendations for Kathy Jo s professionalism and expertise as a personal coach and financial speaker."<br/><strong>- Roseann Martino, Mine Safety Appliances</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <p>"Kathy Jo made a lunchtime presentation to our employees during one of our monthly lunch 'n learns on the subject of budgeting and financial fitness. She has a solid grasp of this topic and presents in an energetic and passionate way. Employees were asked to provide feedback after each session and to comment on past presenters, as well. Kathy Jo was consistently named as a favorite."<br/><strong>- Sharon Ricketts, Massaro Corporation</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <p>"Kathy Jo has designed and conducted several training courses for me over the last two years. The majority of these courses were intended to teach employees how to conduct their financial lives in a successful and responsible manner, as well as how to fix past financial problems. I have never been disappointed in one of Kathy Jo's programs and would highly recommend her to anyone that is looking for a life coach or trainer."<br/><strong>- Will Beaumont, Mountaineer Casino Racetrack & Resort</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
     <h2>Client Testimonials</h2>
     <div class="testimonials">
       <div class="testimonial-card">
-        <p>"Her calm demeanor and professionalism helped me make big changes in my life."<br/><strong>- Margaret Wildi</strong></p>
+        <p>"Since working with Kathy Jo over just 3 or 4 months, I have been able to see where my money was going, where I was 'leaking' money. In her calm coaching and inquiries, she helped me see what moves would be better for me financially. She helped me build a budget and not forget anything, so now I do not worry about 'surprises' popping up. Most importantly, she helped me build self confidence that I can manage my finances, make good decisions, pay debt, keep my small savings intact, and increase my credit score. It has been painless, educational, very helpful and enjoyable to work with Kathy Jo. I look forward to always having her as my personal 'support team'."<br/><strong>- Roberta P., West Virginia</strong></p>
       </div>
       <div class="testimonial-card">
-        <p>"I now have control of my finances, confidence, and found love!"<br/><strong>- Sue, CA</strong></p>
+        <p>"I just spoke of you with a friend who complimented my new found attitude towards life . I shared that I work with a great Life Coach that fully supports me!!"<br/><strong>- Maria, Pennsylvania</strong></p>
       </div>
       <div class="testimonial-card">
-        <p>"Her seminar was a hit with our employees and she's incredibly relatable."<br/><strong>- Roseann Martino</strong></p>
+        <p>"Coach KJ helped me move from 'procrastinator' to 'achiever' in a very short time."<br/><strong>- Paul, Pennsylvania</strong></p>
       </div>
       <div class="testimonial-card">
-        <p>"Coach KJ helped me go from procrastinator to achiever in no time."<br/><strong>- Paul, PA</strong></p>
+        <p>"If you want to get it done... work with Kathy Jo... Amazing results!"<br/><strong>- Katherine, North Carolina</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <p>"After working with Kathy Jo, I am finally in control of my life - my checkbook balances, my savings is growing, and now I found my special someone."<br/><strong>- Sue, California</strong></p>
       </div>
     </div>
   </section>
